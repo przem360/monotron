@@ -1,0 +1,12 @@
+#N canvas 271 188 450 300 12;
+#X obj 143 121 phasor~;
+#X obj 144 165 outlet~;
+#X obj 143 71 inlet~;
+#X obj 203 71 inlet;
+#X obj 203 99 mtof;
+#X text 18 70 signal from LFO;
+#X text 252 72 MIDI;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;

@@ -1,3 +1,6 @@
+VCO: SAW  
+LFO: TRIANGLE / SQUARE (not saw)
+  
 RATE: (speed) the speed of LFO (watch led)
 INT. probably depth of an LFO (8), determines how strong the LFO modulates
 pitch or filter
