@@ -1,0 +1,8 @@
+#N canvas 0 61 623 493 12;
+#X obj 90 36 monotron_delay;
+#X obj 90 456 dac~;
+#X obj 91 4 adc~;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X connect 2 0 0 0;
+#X connect 2 1 0 0;

@@ -1,28 +1,28 @@
-#N canvas 221 94 450 374 12;
-#X obj 314 336 dac~;
-#X obj 21 196 fx_delay;
-#X text 349 220 VOLUME;
-#X obj 220 302 lop~;
-#X obj 262 162 hsl 128 15 20 1000 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 7800 1;
-#X text 345 137 CUTOFF;
-#X obj 266 247 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 5900 1;
-#X obj 291 291 *~;
-#X obj 27 22 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6800 1;
-#X obj 22 157 sawosc;
-#X obj 22 52 monotrondlfo;
-#X obj 127 53 lfopanel;
-#X connect 1 0 3 0;
-#X connect 3 0 7 0;
-#X connect 4 0 3 1;
-#X connect 6 0 7 1;
-#X connect 7 0 0 0;
-#X connect 7 0 0 1;
-#X connect 8 0 9 1;
-#X connect 8 0 10 2;
-#X connect 9 0 1 0;
-#X connect 10 0 9 0;
-#X connect 11 0 10 0;
-#X connect 11 1 10 1;
+#N canvas 210 61 622 503 12;
+#X obj 143 342 fx_delay;
+#X text 477 157 VOLUME;
+#X obj 393 177 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 7300 1;
+#X obj 146 177 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5400 1;
+#X obj 143 307 sawosc;
+#X obj 143 207 monotrondlfo;
+#X obj 246 207 lfopanel;
+#X obj 390 207 vcf_cutoff;
+#X obj 201 307 inlet~;
+#X text 59 304 MIC;
+#X obj 391 317 outlet~;
+#X text 566 323 DAC;
+#X text 230 158 RIBBON;
+#X text 285 110 MONOTRON DELAY;
+#X connect 0 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 5 2;
+#X connect 3 0 4 1;
+#X connect 4 0 0 0;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 6 1 5 1;
+#X connect 7 0 10 0;
+#X connect 8 0 0 0;
+#X coords 0 -1 1 1 460 400 2 100 100;

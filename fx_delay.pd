@@ -1,5 +1,4 @@
 #N canvas 414 93 506 427 12;
-#X obj -131 76 adc~;
 #X text -75 318 Connect adc to delwrite if you want add microphone
 in to delay;
 #X obj -141 31 inlet~;
@@ -17,14 +16,13 @@ in to delay;
 #X obj 23 58 + 60;
 #X obj -147 124 delwrite~ delayname 1100;
 #X text 156 103 DELAY;
-#X connect 0 0 13 0;
-#X connect 2 0 13 0;
-#X connect 4 0 3 0;
+#X connect 1 0 12 0;
+#X connect 3 0 2 0;
+#X connect 3 0 9 0;
 #X connect 4 0 10 0;
-#X connect 5 0 11 0;
-#X connect 7 0 9 0;
-#X connect 7 0 10 1;
-#X connect 10 0 13 0;
-#X connect 11 0 12 0;
-#X connect 12 0 4 0;
+#X connect 6 0 8 0;
+#X connect 6 0 9 1;
+#X connect 9 0 12 0;
+#X connect 10 0 11 0;
+#X connect 11 0 3 0;
 #X coords 0 -1 1 1 148 120 2 100 100;
