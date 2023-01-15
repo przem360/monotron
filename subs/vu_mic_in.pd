@@ -4,17 +4,17 @@
 #X obj 99 15 adc~;
 #X floatatom 38 87 5 0 0 0 - - -;
 #X obj 38 24 env~;
-#X obj 38 60 - 100;
 #X obj 148 132 vsl 15 320 0 2 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 17400 1;
+-1 -1 25300 1;
 #X obj 98 56 *~;
 #X obj 216 78 outlet~;
 #X text 210 57 line out;
-#X connect 2 0 7 0;
+#X obj 38 60 - 80;
+#X connect 2 0 6 0;
 #X connect 3 0 0 0;
-#X connect 4 0 5 0;
-#X connect 5 0 3 0;
-#X connect 6 0 7 1;
-#X connect 7 0 4 0;
-#X connect 7 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 6 1;
+#X connect 6 0 4 0;
+#X connect 6 0 7 0;
+#X connect 9 0 3 0;
 #X coords 0 -1 1 1 170 400 2 100 100;
